@@ -1,0 +1,395 @@
+/*CSS DOCUMENT*/
+@charset "UTF-8";
+
+/* RECOLETA*/
+@font-face {
+    font-family: "Recoleta-Regular";
+    src: url(fonts/Recoleta/Recoleta-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Recoleta-Medium";
+    src: url(fonts/Recoleta/Recoleta-Medium.ttf);
+}
+
+@font-face {
+    font-family: "Recoleta-SemiBold";
+    src: url(fonts/Recoleta/Recoleta-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: "Recoleta-Bold";
+    src: url(fonts/Recoleta/Recoleta-Bold.ttf);
+}
+
+@font-face {
+    font-family: "Recoleta-Black";
+    src: url(fonts/Recoleta/Recoleta-Black.ttf);
+}
+
+/*FUENTE SECUNDARIA: PLAYFAIR DISPLAY*/
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Yeseva+One&display=swap');
+
+/*FUENTE PARA BLOQUES DE TEXTO: INTER*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap');
+
+
+
+
+/*-----------CONFIGURACIONES GENERALES-----------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Recoleta-Medium', 'Playfair Display', serif;
+}
+
+
+body {
+    height: 100%;
+    background-color: #a828b1;
+    color: whitesmoke;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    /*margin: 15px;
+    padding: 0px 80px;*/
+    margin: 16px 48px;
+    padding: 0px 24px;
+
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 24px 40px;
+    max-width: 1280px;
+    flex: 1;
+}
+
+footer {
+    width: 100%;
+    background-color: #6cae75;
+    display: flex;
+    padding: 12px 32px;
+    justify-content: space-between;
+    align-items: center;
+    /*position: fixed;*/
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.25rem;
+}
+
+p {
+    font-family: 'Inter', sans-serif ;
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+b {
+    font-family: 'Inter', sans-serif ;
+    font-weight: 800;
+}
+
+
+
+/*--------------------------------
+-------------HEADER---------------
+---------------------------------*/
+
+#logo-agus-maymo {
+    width: 260px;
+    height: auto;
+}
+
+#barra-navegacion {
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*USAR INTER PARA LOS BOTONES?*/
+.botones-nav {
+    display: flex;
+    gap: 14px;
+}
+
+.botones-nav li {
+    list-style: none;
+}
+
+.botones-nav a {
+    text-decoration: none;
+    padding: 10px 20px;
+    color: #fcb64d;
+    border-color: #fcb64d;
+    border-style: solid;
+    border-radius: 25px;
+    font-size: 0.95rem;
+}
+
+.botones-nav a.boton-contacto {
+    color: #a828b1;
+    background-color: #fcb64d;
+}
+
+
+/*-------------------------------
+-------------MAIN----------------
+---------------------------------*/
+
+#menu-aventura {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*gap: 32px;*/
+    /* margin-top: 16px; */
+    /* margin-bottom: 0; */
+    margin: 20px;
+    gap: 24px;
+    margin-top: 8px;
+}
+
+#menu-aventura article{
+    width: 300px;
+    position: relative;
+}
+#menu-aventura article img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    border-radius: 32px;
+   }
+
+#menu-aventura article .texto-aventura {
+    background: rgba(252, 182, 77, 0.5);
+    width: 100%;
+    height: 100%;
+    border-radius: 32px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-end;
+    opacity: 0;
+    transition: 0.6s;
+
+}
+
+#menu-aventura article .texto-aventura p {
+    font-weight: 500;
+    margin-bottom: 24px;
+    color: white;
+    font-size: 0.9rem;
+}
+
+#menu-aventura article .texto-aventura h3 {
+    color: white;
+}
+
+#menu-aventura article .texto-aventura:hover {
+    opacity:1;
+}
+
+#menu-aventura article .texto-aventura > *{
+    transform: translateY(25px);
+    transition: transform 0.6s;
+}
+
+#menu-aventura article .texto-aventura:hover > *{
+    transform: translateY(0px);
+}
+
+
+/*---------------------------------
+-----------FOOTER------------------
+--------------------------------- */
+
+#barra-footer {
+    display: flex;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 85%;
+    height: 100%;
+}
+
+#barra-footer li a {
+    text-decoration: none;
+    color: whitesmoke;
+
+}
+
+#barra-footer li {
+    list-style: none;
+    padding: 8px 16px;
+}
+
+#social-media {
+    display: flex;
+    gap: 8px;
+}
+
+#social-media img {
+    height: 24px;
+}
+
+/*---------------------------------
+-----------PAGINA-SOBRE-MI-----------
+---------------------------------*/
+#hero {
+    background-color: #6cae75;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    padding: 24px;
+    gap: 24px;
+    border-radius: 25px;
+    margin: 24px auto;
+    max-width: 1100px;
+    /* font-size: 1.3rem;*/
+}
+
+.quien-soy {
+    max-width: 550px;
+}
+
+.quien-soy p {
+    max-width: 500px;
+}
+
+#foto-perfil{
+    padding: 8px;
+    border-radius: 20px;
+    width: 360px;
+}
+
+#habilidades {
+    padding: 24px 16px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+#habilidades article{
+    display: flex;
+    gap: 24px;
+    margin-bottom: 24px;
+    
+}
+
+#habilidades div{
+    padding: 8px 12px;
+    flex: 1;
+}
+
+#herramientas img{
+    width: 70px;
+    margin: 6px;
+}
+
+
+/*---------------------------------
+-----------PAGINA-CONTACTO-----------
+---------------------------------*/
+
+form {
+    max-width: 710px;
+    margin: 20px auto;
+    padding: 30px 30px;
+    background-color: #fff8;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Campos de texto del formulario */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  width: 100%;
+  padding: 10px 14px;
+  margin-bottom: 20px;
+  border: 2px solid #a828b1;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Checkbox */
+input[type="checkbox"] {
+    width: auto;
+    height: auto;
+    accent-color: #fcb64d;
+    transform: scale(1.2);
+    /*margin: 10px;*/
+    margin-right: 8px;
+}
+
+.check-botones-form {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+label, select, option {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.95rem;
+    padding: 10px 14px;
+    /*margin-bottom: 15px;*/
+}
+
+/*Sección "Términos y Condiciones"*/
+
+/*#terminos-condiciones{
+    padding: 0 16px;
+}*/
+
+/* Botones */
+
+#boton-borrar,
+#boton-enviar  {
+    font-family: 'Inter', sans-serif;
+    /* font-size: 1rem; */
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#boton-borrar {
+  background-color: D9D9D9;
+  color: #6A6969;
+  font-weight: bold;
+}
+
+#boton-enviar {
+    background-color: #fcb64d; color: #a828b1;
+    font-weight: bold;
+}
+
+button:hover {
+  transform: scale(1.05);
+  background-color: #e0a62e;
+}
