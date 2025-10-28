@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <link href="estilo-tp2.css" rel="stylesheet" type="text/css">
+    <title>Agustina Maymo - Portfolio Diseñadora gráfica</title>
+</head>
+
+<body>
+    <header>
+        <nav id="barra-navegacion">
+            <a href="index.html">
+                <img id="logo-agus-maymo" src="images/logo-agus-maymo.svg" alt="Logo Agus Maymo" width="392"
+                    height="52">
+            </a>
+
+            <ul class="botones-nav">
+                <li>
+                    <a href="sobre-mi.html">Sobre mí</a>
+                </li>
+
+                <li>
+                    <a href="proyectos.html">Proyectos</a>
+                </li>
+
+                <li>
+                    <a class="boton-contacto" href="contacto.html">Contacto</a>
+                </li>
+
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>CONTACTO</h1>
+        <p class="form-intro">¿Tenés una idea o proyecto en mente? Contame un poco sobre vos y coordinemos una charla ✨</p>
+        <section>
+            <form method="post" action="mailto:agustina.maymo@gmail.com?subject=Contacto%20Web">
+                <input type="text" name="Nombre" id="Nombre" maxlength="30" placeholder="Nombre y Apellido*" required>
+
+                <input type="email" name="Mail" id="Mail" maxlength="50" placeholder="Mail*" required>
+
+                <input type="tel" name="Teléfono" id="Teléfono" maxlength="30" placeholder="Teléfono*" required>
+
+                <input type="text" name="Asunto" id="Asunto" maxlength="50" placeholder="Asunto*" required>
+
+                <label for="tipo">Tipo de proyecto</label>
+<select id="tipo" name="tipo">
+  <option value="">Seleccioná una opción</option>
+  <option value="identidad">Identidad visual</option>
+  <option value="branding">Estrategia de marca</option>
+  <option value="tienda">Diseño de tienda online</option>
+  <option value="uxui">Diseño UX/UI</option>
+  <option value="otro">Otro</option>
+</select>
+
+                <textarea name="Mensaje" id="mensajes" rows="5" placeholder="Mensaje*" required></textarea>
+
+                <article class="check-botones-form">
+                    <label for="aceptar-terminos-condiciones" id="terminos-condiciones">
+                        <input type="checkbox" name="terminos-condiciones" id="terminos-condiciones" required>
+                        *Acepto los Términos y Condiciones de uso
+                    </label>
+                    <div id="botones-form">
+                        <input id="boton-borrar" type="reset" value="Borrar">
+                        <input id="boton-enviar" type="submit" value="Enviar">
+                    </div>
+                </article>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <ul id="barra-footer">
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+
+            <li>
+                <a href="sobre-mi.html">Sobre mí</a>
+            </li>
+
+            <li>
+                <a href="proyectos.html">Proyectos</a>
+            </li>
+
+            <li>
+                <a href="contacto.html">Contacto</a>
+            </li>
+        </ul>
+        <section id="social-media">
+            <a href="https://wa.me/+5491123945586/">
+                <img src="images/whatsapp-svgrepo-com.svg">
+            </a>
+            <a href="https://www.linkedin.com/in/agusmaymo/">
+                <img src="images/linkedin-svgrepo-com.svg">
+            </a>
+            <a href="mailto:agustina.maymo@gmail.com">
+                <img src="images/email-svgrepo-com.svg">
+            </a>
+
+        </section>
+    </footer>
+</body>
+
+</html>
