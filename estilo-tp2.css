@@ -434,13 +434,18 @@ button:hover {
 /*------IDS CON LAS IMÁGENES DE LA GALERÍA-------*/
 
 #foto-1 {
-	background-image: url("img/foto-1.jpg");
+	background-image: url("images/aqualaf-proyectos.jpg");
 }
 
 #foto-2 {
-	background-image: url("img/foto-2.jpg")
+	background-image: url("images/anime-style-proyectos.jpg")
 }
 
 #foto-3 {
-	background-image:url("img/foto-3.jpg");
+	background-image:url("images/time-tamer-proyectos.jpg");
 }
+
+#foto-4 {
+	background-image:url("images/fampet-proyectos.jpg");
+}
+

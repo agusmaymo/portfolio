@@ -45,34 +45,43 @@
 
 
     <main>
-        <section id="miniaturas"> <!--Falta definir las fotos de los trabajos-->
-            <a href="images/aqualaf-proyectos.jpg"><img src="" width="200px" height="200px" alt="Aqualaf" onClick="mostrarGaleria()"></a>
-            <a href="images/anime-style-proyectos.jpg"><img src="" width="200px" height="200px" alt="Anime Style" onClick="mostrarGaleria()"></a>
-            <a href="images/time-tamer-proyectos.jpg"><img src="" width="200px" height="200px" alt="Time Tamer" onClick="mostrarGaleria()"></a>
-            <a href="images/fampet-proyectos.jpg"><img src="" width="200px" height="200px" alt="Fampet" onClick="mostrarGaleria()"></a>
+        <section id="miniaturas"> <!--faltan miniaturas REALES para poner en el src-->
+            <a href="#foto-1"><img src="images/aqualaf-proyectos.jpg" width="200px" height="200px" alt="Aqualaf"
+                    onClick="mostrarGaleria()"></a>
+            <a href="#foto-2"><img src="images/anime-style-proyectos.jpg" width="200px" height="200px" alt="Anime Style"
+                    onClick="mostrarGaleria()"></a>
+            <a href="#foto-3"><img src="images/time-tamer-proyectos.jpg" width="200px" height="200px" alt="Time Tamer"
+                    onClick="mostrarGaleria()"></a>
+            <a href="#foto-4"><img src="images/fampet-proyectos.jpg" width="200px" height="200px" alt="Fampet"
+                    onClick="mostrarGaleria()"></a>
         </section>
-        <section id="galeria">
+        <section id="galeria"> <!--Acá capaz me conviene armar uno por cada proyecto, asi cuando cliquea la miniatura se ven todas las fotos de ese proyecto...a chequear que se puede hacer-->
             <ul id="galeria-oculta">
                 <li class="fraccion-galeria" id="foto-1">
-                    <a href="images/aqualaf-proyectos.jpg" class="primer-ultima-flecha"><img
-                            src="svg/angulo-izquierdo.svg" width="50px" height="50px" alt="Anterior"></a>
-                    <img class="close" src="svg/cruz.svg" alt="Cerrar" width="50px" height="50px"
-                        onClick="ocultarGaleria()">
-                    <a href=""><img src="svg/angulo-derecho.svg" width="50px" height="50px" alt="Siguiente"></a>
+                    <a href="#" class="primer-ultima-flecha"><img src="svg/angulo-izquierdo.svg" width="50px"
+                            height="50px" alt="Anterior"></a>
+                    <img class="close" src="svg/cruz.svg" alt="Cerrar" width="50px" height="50px" onClick="ocultarGaleria()">
+                    <a href="#foto-2"><img src="svg/angulo-derecho.svg" width="50px"
+                            height="50px" alt="Siguiente"></a>
                 </li>
                 <li class="fraccion-galeria" id="foto-2">
-                    <a href="images/anime-style-proyectos.jpg"><img src="svg/angulo-izquierdo.svg" width="50px"
-                            height="50px" alt="Anterior"></a>
-                    <img class="close" src="svg/cruz.svg" alt="Cerrar" width="50px" height="50px"
-                        onClick="ocultarGaleria()">
-                    <a href="#foto-3"><img src="svg/angulo-derecho.svg" width="50px" height="50px" alt="Siguiente"></a>
+                    <a href="#foto-1"><img src="svg/angulo-izquierdo.svg" width="50px" height="50px" alt="Anterior"></a>
+                    <img class="close" src="svg/cruz.svg" alt="Cerrar" width="50px" height="50px" onClick="ocultarGaleria()">
+                        <a href="#foto-3"><img src="svg/angulo-derecho.svg" width="50px" height="50px" alt="Siguiente"></a>
                 </li>
+
                 <li class="fraccion-galeria" id="foto-3">
                     <a href="#foto-2"><img src="svg/angulo-izquierdo.svg" width="50px" height="50px" alt="Anterior"></a>
-                    <img class="close" src="svg/cruz.svg" alt="Cerrar" width="50px" height="50px"
-                        onClick="ocultarGaleria()">
-                    <a href="#" class="primer-ultima-flecha"><img src="svg/angulo-derecho.svg" width="50px"
-                            height="50px" alt="Siguiente"></a>
+                    <img class="close" src="svg/cruz.svg" alt="Cerrar" width="50px" height="50px" onClick="ocultarGaleria()">
+                        <a href="#foto-4"><img src="svg/angulo-derecho.svg" width="50px" height="50px" alt="Siguiente"></a>
+                </li>
+                
+                
+                <li class="fraccion-galeria" id="foto-4">
+                    <a href="#foto-3"><img src="svg/angulo-izquierdo.svg" width="50px" height="50px" alt="Anterior"></a>
+                    <img class="close" src="svg/cruz.svg" alt="Cerrar" width="50px" height="50px" onClick="ocultarGaleria()">
+                    <a href="#" class="primer-ultima-flecha"><img src="svg/angulo-derecho.svg" width="50px" height="50px"
+                            alt="Siguiente"></a>
                 </li>
             </ul>
         </section>
