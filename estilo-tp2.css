@@ -340,7 +340,6 @@ input[type="checkbox"] {
     height: auto;
     accent-color: #fcb64d;
     transform: scale(1.2);
-    /*margin: 10px;*/
     margin-right: 8px;
 }
 
@@ -355,14 +354,7 @@ label, select, option {
     font-family: 'Inter', sans-serif;
     font-size: 0.95rem;
     padding: 10px 14px;
-    /*margin-bottom: 15px;*/
 }
-
-/*Sección "Términos y Condiciones"*/
-
-/*#terminos-condiciones{
-    padding: 0 16px;
-}*/
 
 /* Botones */
 
@@ -392,4 +384,63 @@ label, select, option {
 button:hover {
   transform: scale(1.05);
   background-color: #e0a62e;
+}
+
+/*---------------------------------
+-----------PAGINA-PROYECTOS-----------
+---------------------------------*/
+
+#galeria {
+	display: none;
+	width: 100%;
+	justify-content: center;
+	height: 100vh;
+	background-color: #000000;
+	position: absolute;
+	top: 0;
+	z-index: 10;
+}
+
+#galeria-oculta {
+	display: flex;
+	width: 100%;
+	max-width: 1450px;
+	overflow: hidden;
+	z-index: 20;
+}
+
+.fraccion-galeria {
+	display: flex;
+	align-items: center;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+	width: 100%;
+	min-width: 1450px;
+	height: 100vh;
+	justify-content: space-between;
+}
+
+.primer-ultima-flecha {
+	visibility: hidden;
+}
+
+.close {
+	position: absolute;
+	top: 10px;
+	right: 2%;
+}
+
+/*------IDS CON LAS IMÁGENES DE LA GALERÍA-------*/
+
+#foto-1 {
+	background-image: url("img/foto-1.jpg");
+}
+
+#foto-2 {
+	background-image: url("img/foto-2.jpg")
+}
+
+#foto-3 {
+	background-image:url("img/foto-3.jpg");
 }
