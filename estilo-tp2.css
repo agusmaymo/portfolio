@@ -50,10 +50,9 @@ body {
     height: 100%;
     background-color: #a828b1;
     color: whitesmoke;
-    font-size: 16px;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
 }
 
 header {
@@ -66,12 +65,11 @@ header {
 
 main {
     display: flex;
+    justify-content: center;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     margin: 0 auto;
     padding: 24px 40px;
-    max-width: 1280px;
     flex: 1;
 }
 
@@ -89,7 +87,7 @@ footer {
 }
 
 h1 {
-    font-size: 2rem;
+    margin-bottom: 5px;
 }
 
 h3 {
@@ -98,8 +96,6 @@ h3 {
 
 p {
     font-family: 'Inter', sans-serif ;
-    font-size: 0.95rem;
-    font-weight: 500;
 }
 
 b {
@@ -112,11 +108,6 @@ b {
 /*--------------------------------
 -------------HEADER---------------
 ---------------------------------*/
-
-#logo-agus-maymo {
-    width: 260px;
-    height: auto;
-}
 
 #barra-navegacion {
     font-weight: 600;
@@ -283,33 +274,24 @@ transition: opacity 0.4s ease;
     background-color: #6cae75;
     display: flex;
     align-items: center;
-    /* justify-content: center; */
     padding: 24px;
     gap: 24px;
     border-radius: 25px;
     margin: 24px auto;
-    max-width: 1100px;
-    /* font-size: 1.3rem;*/
-}
-
-.quien-soy {
-    max-width: 550px;
 }
 
 .quien-soy p {
-    max-width: 500px;
+    width: 460px;
 }
 
 #foto-perfil{
     padding: 8px;
     border-radius: 20px;
-    width: 360px;
 }
 
 #habilidades {
-    padding: 24px 16px;
-    max-width: 1100px;
-    margin: 0 auto;
+    padding: 32px;
+    max-width: 1000px;
 }
 
 #habilidades article{
@@ -325,7 +307,6 @@ transition: opacity 0.4s ease;
 }
 
 #herramientas img{
-    width: 70px;
     margin: 6px;
 }
 
@@ -336,7 +317,7 @@ transition: opacity 0.4s ease;
 
 form {
     max-width: 710px;
-    margin: 20px auto;
+    margin: 16px auto;
     padding: 30px 30px;
     background-color: #fff8;
     border-radius: 20px;
@@ -370,15 +351,21 @@ input[type="checkbox"] {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    flex-direction: row;
 }
 
 label, select, option {
     font-family: 'Inter', sans-serif;
-    font-size: 0.95rem;
-    padding: 10px 14px;
+    padding: 10px;
 }
 
+label {
+    color:#941f9d;
+    font-weight: 600;
+}
+
+select {
+    margin-bottom: 20px;
+}
 /* Botones */
 
 #boton-borrar,
@@ -394,7 +381,6 @@ label, select, option {
 }
 
 #boton-borrar {
-  background-color: D9D9D9;
   color: #6A6969;
   font-weight: bold;
 }
