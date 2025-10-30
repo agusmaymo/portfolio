@@ -36,7 +36,7 @@
         <p class="form-intro">¿Tenés una idea o proyecto en mente? Contame un poco sobre vos y coordinemos una charla ✨
         </p>
         <section>
-            <form method="post" action="mailto:agustina.maymo@gmail.com?subject=Contacto%20Web">
+            <form id="form-contacto" method="post" action="mailto:agustina.maymo@gmail.com?subject=Contacto%20Web">
                 <input type="text" name="Nombre" id="Nombre" maxlength="30" placeholder="Nombre y Apellido*" required>
 
                 <input type="email" name="Mail" id="Mail" maxlength="50" placeholder="Mail*" required>
@@ -67,7 +67,16 @@
                         <input id="boton-enviar" type="submit" value="Enviar">
                     </div>
                 </article>
+                <!-- Mensaje de confirmación oculto -->
+                <p id="mensaje-exito">¡Su formulario ha sido enviado!</p>
             </form>
+            <script>
+                document.getElementById("form-contacto").addEventListener("submit", function (event) {
+                    event.preventDefault();
+                    document.getElementById("mensaje-exito").style.display = "block";
+                    this.reset();
+                });
+            </script>
         </section>
     </main>
     <footer>
