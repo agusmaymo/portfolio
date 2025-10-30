@@ -440,22 +440,81 @@ button:hover {
 	right: 2%;
 }
 
+#miniaturas {
+    display: flex;
+    gap: 16px;
+    margin: 24px;
+}
+
+#miniaturas a {
+    width: 300px;
+    height: 300px;
+}
+
 /*------IDS CON LAS IMÁGENES DE LA GALERÍA-------*/
 
-#foto-1 {
-	background-image: url("images/aqualaf-proyectos.jpg");
+#foto-1-aqualaf {
+	background-image: url("images/");
 }
 
-#foto-2 {
-	background-image: url("images/anime-style-proyectos.jpg")
+#foto-2-aqualaf {
+	background-image: url("images/")
 }
 
-#foto-3 {
-	background-image:url("images/time-tamer-proyectos.jpg");
+#foto-3-aqualaf {
+	background-image:url("images/");
 }
 
-#foto-4 {
-	background-image:url("images/fampet-proyectos.jpg");
+#foto-4-aqualaf {
+	background-image:url("images/");
+}
+
+#foto-1-anime {
+	background-image: url("images/anime-style-gallery-1.png");
+}
+
+#foto-2-anime {
+	background-image: url("images/anime-style-gallery-2.png")
+}
+
+#foto-3-anime {
+	background-image:url("images/anime-style-gallery-3.jpg");
+}
+
+#foto-4-anime {
+	background-image:url("images/anime-style-gallery-4.png");
+}
+
+#foto-1-time {
+	background-image: url("images/");
+}
+
+#foto-2-time {
+	background-image: url("images/")
+}
+
+#foto-3-time {
+	background-image:url("images/");
+}
+
+#foto-4-time {
+	background-image:url("images/");
+}
+
+#foto-1-nutty {
+	background-image: url("images/");
+}
+
+#foto-2-nutty {
+	background-image: url("images/")
+}
+
+#foto-3-nutty {
+	background-image:url("images/");
+}
+
+#foto-4-nutty {
+	background-image:url("images/");
 }
 
 #video-fondo {

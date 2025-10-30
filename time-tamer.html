@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Agustina Maymo - Portfolio Diseñadora gráfica</title>
+    <link href="estilo-tp2.css" rel="stylesheet" type="text/css">
+    <script>
+        function cambiarDisplay(visibilidadNueva) {
+            document.getElementById("galeria").style.display = visibilidadNueva
+        }
+        function mostrarGaleria() {
+            cambiarDisplay('flex')
+        }
+        function ocultarGaleria() {
+            cambiarDisplay('none')
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <nav id="barra-navegacion">
+            <a href="index.html">
+                <img id="logo-agus-maymo" src="images/logo-agus-maymo.svg" alt="Logo Agus Maymo" width="392"
+                    height="52">
+            </a>
+
+            <ul class="botones-nav">
+                <li>
+                    <a href="sobre-mi.html">Sobre mí</a>
+                </li>
+
+                <li>
+                    <a href="proyectos.html">Proyectos</a>
+                </li>
+
+                <li>
+                    <a class="boton-contacto" href="contacto.html">Contacto</a>
+                </li>
+
+            </ul>
+        </nav>
+    </header>
+
+<main>
+        <h1>TIME TAMER</h1>
+        <p>Diseño de interfaz de aplicación para manejo del tiempo en pantalla</p>
+        <section id="miniaturas"> <!--faltan miniaturas REALES para poner en el src-->
+            <a href="#foto-1-time"><img src="images/" width="500px" height="300px" alt="Logo time Style y variables"
+                    onClick="mostrarGaleria()"></a>
+            <a href="#foto-2-time"><img src="images/" width="500px" height="300px" alt="tipografías time Style"
+                    onClick="mostrarGaleria()"></a>
+            <a href="#foto-3-time"><img src="images/" width="500px" height="300px" alt="Mockups time Style"
+                    onClick="mostrarGaleria()"></a>
+            <a href="#foto-4-time"><img src="images/" width="500px" height="300px" alt="Redes sociales time Style"
+                    onClick="mostrarGaleria()"></a>
+        </section>
+        <section id="galeria">
+            <ul id="galeria-oculta">
+                <li class="fraccion-galeria" id="foto-1-time">
+                    <a href="#" class="primer-ultima-flecha"><img src="svg/angulo-izquierdo.svg" width="50px"
+                            height="50px" alt="Anterior"></a>
+                    <img class="close" src="svg/cruz.svg" alt="Cerrar" width="50px" height="50px"
+                        onClick="ocultarGaleria()">
+                    <a href="#foto-2-time"><img src="svg/angulo-derecho.svg" width="50px" height="50px" alt="Siguiente"></a>
+                </li>
+                <li class="fraccion-galeria" id="foto-2-time">
+                    <a href="#foto-1-time"><img src="svg/angulo-izquierdo.svg" width="50px" height="50px" alt="Anterior"></a>
+                    <img class="close" src="svg/cruz.svg" alt="Cerrar" width="50px" height="50px"
+                        onClick="ocultarGaleria()">
+                    <a href="#foto-3-time"><img src="svg/angulo-derecho.svg" width="50px" height="50px" alt="Siguiente"></a>
+                </li>
+
+                <li class="fraccion-galeria" id="foto-3-time">
+                    <a href="#foto-2-time"><img src="svg/angulo-izquierdo.svg" width="50px" height="50px" alt="Anterior"></a>
+                    <img class="close" src="svg/cruz.svg" alt="Cerrar" width="50px" height="50px"
+                        onClick="ocultarGaleria()">
+                    <a href="#foto-4-time"><img src="svg/angulo-derecho.svg" width="50px" height="50px" alt="Siguiente"></a>
+                </li>
+
+                <li class="fraccion-galeria" id="foto-4-time">
+                    <a href="#foto-3-time"><img src="svg/angulo-izquierdo.svg" width="50px" height="50px" alt="Anterior"></a>
+                    <img class="close" src="svg/cruz.svg" alt="Cerrar" width="50px" height="50px"
+                        onClick="ocultarGaleria()">
+                    <a href="#" class="primer-ultima-flecha"><img src="svg/angulo-derecho.svg" width="50px"
+                            height="50px" alt="Siguiente"></a>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <ul id="barra-footer">
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+
+            <li>
+                <a href="sobre-mi.html">Sobre mí</a>
+            </li>
+
+            <li>
+                <a href="proyectos.html">Proyectos</a>
+            </li>
+
+            <li>
+                <a href="contacto.html">Contacto</a>
+            </li>
+        </ul>
+        <section id="social-media">
+            <a href="https://wa.me/+5491123945586/" target="_blank">
+                <img src="images/whatsapp-svgrepo-com.svg">
+            </a>
+            <a href="https://www.linkedin.com/in/agusmaymo/" target="_blank">
+                <img src="images/linkedin-svgrepo-com.svg">
+            </a>
+            <a href="mailto:agustina.maymo@gmail.com" target="_blank">
+                <img src="images/email-svgrepo-com.svg">
+            </a>
+
+        </section>
+    </footer>
+</body>
+
+</html>
