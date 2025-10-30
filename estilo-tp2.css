@@ -458,9 +458,11 @@ button:hover {
 }
 
 #miniaturas {
+    width: 100%;
     display: flex;
     gap: 16px;
     margin: 24px;
+    flex-wrap: wrap;
 }
 
 #miniaturas a {
@@ -471,19 +473,19 @@ button:hover {
 /*------IDS CON LAS IMÁGENES DE LA GALERÍA-------*/
 
 #foto-1-aqualaf {
-	background-image: url("images/");
+	background-image: url("images/aqualaf-gallery-1.png");
 }
 
 #foto-2-aqualaf {
-	background-image: url("images/")
+	background-image: url("images/aqualaf-gallery-2.png")
 }
 
 #foto-3-aqualaf {
-	background-image:url("images/");
+	background-image:url("images/aqualaf-gallery-3.png");
 }
 
 #foto-4-aqualaf {
-	background-image:url("images/");
+	background-image:url("images/aqualaf-gallery-4.png");
 }
 
 #foto-1-anime {
