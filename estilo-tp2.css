@@ -580,3 +580,84 @@ button:hover {
   opacity: 0.40; 
   pointer-events: none;
 }/* <!--HAY QUE CAMBIAR TAMAÑO DE VIDEO*/
+
+
+
+
+
+
+
+
+@media screen and (min-width: 500px) and (max-width: 1200px) {
+
+main {
+   justify-content: flex-start ;
+}
+
+h1 {
+    font-size: 5rem;
+}
+
+/*---------------------------------
+-----------PAGINA-CONTACTO-----------
+---------------------------------*/
+
+.form-intro {
+    font-size: 2rem;
+    max-width: 90%;
+}
+
+#formulario-contacto p {
+    font-size: 2rem;
+}
+
+form {
+    max-width: 90%;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  width: 100%;
+  padding: 50px 20px;
+  margin-bottom: 20px;
+  border: 3px solid #a828b1;
+  border-radius: 30px;
+  font-size: 2rem;
+}
+
+label {
+    font-size: 2rem;
+}
+
+#tipo {
+    font-size: 1.7rem;
+}
+
+.check-botones-form {
+    display: flex;
+    flex-direction: column;
+}
+
+#check-terminos-condiciones {
+    width: 30px;
+    height: 30px;
+}
+
+#boton-borrar,
+#boton-enviar  {
+    font-size: 2rem;
+    padding: 18px 58px;
+    margin: 20px;
+}
+
+#mensaje-exito {
+    margin-top: 30px;
+    padding: 45px 45px;
+    border-radius: 30px;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(8px); }
+    to { opacity: 1; transform: translateY(0); } }
