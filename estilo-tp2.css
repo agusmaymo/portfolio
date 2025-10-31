@@ -761,7 +761,6 @@ label {
 /*---PAGINA-PROYECTOS-INDIVIDUALES---*/
 
 #miniaturas {
-    width: 100vh;
     flex-direction: column;
     align-items: center;
 }
