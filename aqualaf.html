@@ -5,6 +5,8 @@
     <meta charset="utf-8" />
     <title>Agustina Maymo - Portfolio Diseñadora gráfica</title>
     <link href="estilo-tp2.css" rel="stylesheet" type="text/css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico?v=2">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico?v=2">
     <script>
         function cambiarDisplay(visibilidadNueva) {
             document.getElementById("galeria").style.display = visibilidadNueva
@@ -43,51 +45,68 @@
         </nav>
     </header>
 
-<main>
-        <h1>AQUALAF</h1>
-        <p>Identidad, estrategia y liderazgo en comunicación</p>
-        <section id="miniaturas"> <!--faltan miniaturas REALES para poner en el src-->
-            <a href="#foto-1-aqualaf"><img src="images/aqualaf-gallery-1.png" width="300px" height="180px" alt="Logo aqualaf Style y variables"
-                    onClick="mostrarGaleria()"></a>
-            <a href="#foto-2-aqualaf"><img src="images/aqualaf-gallery-2.png" width="300px" height="180px" alt="tipografías aqualaf Style"
-                    onClick="mostrarGaleria()"></a>
-            <a href="#foto-3-aqualaf"><img src="images/aqualaf-gallery-3.png" width="300px" height="180px" alt="Mockups aqualaf Style"
-                    onClick="mostrarGaleria()"></a>
-            <a href="#foto-4-aqualaf"><img src="images/aqualaf-gallery-4.png" width="300px" height="180px" alt="Redes sociales aqualaf Style"
-                    onClick="mostrarGaleria()"></a>
-        </section>
-        <section id="galeria">
-            <ul id="galeria-oculta">
-                <li class="fraccion-galeria" id="foto-1-aqualaf">
-                    <a href="#" class="primer-ultima-flecha"><img src="svg/angulo-izquierdo.svg" width="50px"
-                            height="50px" alt="Anterior"></a>
-                    <img class="close" src="svg/cruz.svg" alt="Cerrar" width="30px" height="30px"
-                        onClick="ocultarGaleria()">
-                    <a href="#foto-2-aqualaf"><img src="svg/angulo-derecho.svg" width="50px" height="50px" alt="Siguiente"></a>
-                </li>
-                <li class="fraccion-galeria" id="foto-2-aqualaf">
-                    <a href="#foto-1-aqualaf"><img src="svg/angulo-izquierdo.svg" width="50px" height="50px" alt="Anterior"></a>
-                    <img class="close" src="svg/cruz.svg" alt="Cerrar" width="30px" height="30px"
-                        onClick="ocultarGaleria()">
-                    <a href="#foto-3-aqualaf"><img src="svg/angulo-derecho.svg" width="50px" height="50px" alt="Siguiente"></a>
-                </li>
+    <main>
+        <section class="presentacion-proyecto">
+            <section>
+                <h1>AQUALAF</h1>
+                <h3>Identidad, estrategia y liderazgo en comunicación</h3>
+                <p>Aqualaf es una fábrica de griferías y distribuidora de sanitarios ubicada en Burzaco, con más de 10
+                    años de experiencia en el mercado sanitarista. Su principal desafio era ampliar la identidad visual
+                    de la marca mas allá del logo y la implementación de una estrategia de comunicación integral que la
+                    posicionara en el mercado, estando a la altura de empresas como FV, Peirano y Piazza</p>
+            </section>
+            <section id="miniaturas">
+                <a href="#foto-1-aqualaf"><img src="images/aqualaf-gallery-1.png" width="300px" height="180px"
+                        alt="Logo aqualaf Style y variables" onClick="mostrarGaleria()"></a>
+                <a href="#foto-2-aqualaf"><img src="images/aqualaf-gallery-2.png" width="300px" height="180px"
+                        alt="tipografías aqualaf Style" onClick="mostrarGaleria()"></a>
+                <a href="#foto-3-aqualaf"><img src="images/aqualaf-gallery-3.png" width="300px" height="180px"
+                        alt="Mockups aqualaf Style" onClick="mostrarGaleria()"></a>
+                <a href="#foto-4-aqualaf"><img src="images/aqualaf-gallery-4.png" width="300px" height="180px"
+                        alt="Redes sociales aqualaf Style" onClick="mostrarGaleria()"></a>
+            </section>
+            <section id="galeria">
+                <ul id="galeria-oculta">
+                    <li class="fraccion-galeria" id="foto-1-aqualaf">
+                        <a href="#" class="primer-ultima-flecha"><img src="svg/angulo-izquierdo.svg" width="50px"
+                                height="50px" alt="Anterior"></a>
+                        <img class="close" src="svg/cruz.svg" alt="Cerrar" width="30px" height="30px"
+                            onClick="ocultarGaleria()">
+                        <a href="#foto-2-aqualaf"><img src="svg/angulo-derecho.svg" width="50px" height="50px"
+                                alt="Siguiente"></a>
+                    </li>
+                    <li class="fraccion-galeria" id="foto-2-aqualaf">
+                        <a href="#foto-1-aqualaf"><img src="svg/angulo-izquierdo.svg" width="50px" height="50px"
+                                alt="Anterior"></a>
+                        <img class="close" src="svg/cruz.svg" alt="Cerrar" width="30px" height="30px"
+                            onClick="ocultarGaleria()">
+                        <a href="#foto-3-aqualaf"><img src="svg/angulo-derecho.svg" width="50px" height="50px"
+                                alt="Siguiente"></a>
+                    </li>
 
-                <li class="fraccion-galeria" id="foto-3-aqualaf">
-                    <a href="#foto-2-aqualaf"><img src="svg/angulo-izquierdo.svg" width="50px" height="50px" alt="Anterior"></a>
-                    <img class="close" src="svg/cruz.svg" alt="Cerrar" width="30px" height="30px"
-                        onClick="ocultarGaleria()">
-                    <a href="#foto-4-aqualaf"><img src="svg/angulo-derecho.svg" width="50px" height="50px" alt="Siguiente"></a>
-                </li>
+                    <li class="fraccion-galeria" id="foto-3-aqualaf">
+                        <a href="#foto-2-aqualaf"><img src="svg/angulo-izquierdo.svg" width="50px" height="50px"
+                                alt="Anterior"></a>
+                        <img class="close" src="svg/cruz.svg" alt="Cerrar" width="30px" height="30px"
+                            onClick="ocultarGaleria()">
+                        <a href="#foto-4-aqualaf"><img src="svg/angulo-derecho.svg" width="50px" height="50px"
+                                alt="Siguiente"></a>
+                    </li>
 
-                <li class="fraccion-galeria" id="foto-4-aqualaf">
-                    <a href="#foto-3-aqualaf"><img src="svg/angulo-izquierdo.svg" width="50px" height="50px" alt="Anterior"></a>
-                    <img class="close" src="svg/cruz.svg" alt="Cerrar" width="30px" height="30px"
-                        onClick="ocultarGaleria()">
-                    <a href="#" class="primer-ultima-flecha"><img src="svg/angulo-derecho.svg" width="50px"
-                            height="50px" alt="Siguiente"></a>
-                </li>
-            </ul>
+                    <li class="fraccion-galeria" id="foto-4-aqualaf">
+                        <a href="#foto-3-aqualaf"><img src="svg/angulo-izquierdo.svg" width="50px" height="50px"
+                                alt="Anterior"></a>
+                        <img class="close" src="svg/cruz.svg" alt="Cerrar" width="30px" height="30px"
+                            onClick="ocultarGaleria()">
+                        <a href="#" class="primer-ultima-flecha"><img src="svg/angulo-derecho.svg" width="50px"
+                                height="50px" alt="Siguiente"></a>
+                    </li>
+                </ul>
+            </section>
         </section>
+        <a class="boton-volver" href="proyectos.html">
+            <p>Volver a Proyectos</p>
+        </a>
     </main>
 
     <footer>

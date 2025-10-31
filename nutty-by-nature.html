@@ -5,6 +5,8 @@
     <meta charset="utf-8" />
     <title>Agustina Maymo - Portfolio Diseñadora gráfica</title>
     <link href="estilo-tp2.css" rel="stylesheet" type="text/css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico?v=2">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico?v=2">
     <script>
         function cambiarDisplay(visibilidadNueva) {
             document.getElementById("galeria").style.display = visibilidadNueva
@@ -43,50 +45,53 @@
         </nav>
     </header>
 
-<main>
-        <h1>NUTTY BY NATURE</h1>
-        <p>Branding ficticio</p>
-        <section id="miniaturas"> <!--faltan miniaturas REALES para poner en el src-->
-            <a href="#foto-1-nutty"><img src="images/" width="500px" height="300px" alt="Logo nutty Style y variables"
-                    onClick="mostrarGaleria()"></a>
-            <a href="#foto-2-nutty"><img src="images/" width="500px" height="300px" alt="tipografías nutty Style"
-                    onClick="mostrarGaleria()"></a>
-            <a href="#foto-3-nutty"><img src="images/" width="500px" height="300px" alt="Mockups nutty Style"
-                    onClick="mostrarGaleria()"></a>
-            <a href="#foto-4-nutty"><img src="images/" width="500px" height="300px" alt="Redes sociales nutty Style"
-                    onClick="mostrarGaleria()"></a>
-        </section>
-        <section id="galeria">
-            <ul id="galeria-oculta">
-                <li class="fraccion-galeria" id="foto-1-nutty">
-                    <a href="#" class="primer-ultima-flecha"><img src="svg/angulo-izquierdo.svg" width="50px"
-                            height="50px" alt="Anterior"></a>
-                    <img class="close" src="svg/cruz.svg" alt="Cerrar" width="50px" height="50px"
-                        onClick="ocultarGaleria()">
-                    <a href="#foto-2-nutty"><img src="svg/angulo-derecho.svg" width="50px" height="50px" alt="Siguiente"></a>
-                </li>
-                <li class="fraccion-galeria" id="foto-2-nutty">
-                    <a href="#foto-1-nutty"><img src="svg/angulo-izquierdo.svg" width="50px" height="50px" alt="Anterior"></a>
-                    <img class="close" src="svg/cruz.svg" alt="Cerrar" width="50px" height="50px"
-                        onClick="ocultarGaleria()">
-                    <a href="#foto-3-nutty"><img src="svg/angulo-derecho.svg" width="50px" height="50px" alt="Siguiente"></a>
-                </li>
+    <main>
+        <section class="presentacion-proyecto">
+            <section>
+                <h1>NUTTY BY NATURE</h1>
+                <h3>Branding ficticio</h3>
+                <p>Nutty by Nature es una marca de pastas de frutos secos naturales que busca posicionarse como una opción saludable, moderna y divertida dentro del mercado alimenticio. El desafío principal del proyecto fue desarrollar una identidad visual que reflejara su espíritu fresco y natural, manteniendo una estética llamativa pero fácilmente reconocible en góndola, creando una marca con fuerte presencia, adaptable a distintas variedades de producto y con un enfoque estratégico en la pregnancia.</p>
+                <section id="miniaturas"> <!--faltan miniaturas REALES para poner en el src-->
+                    <a href="#foto-1-nutty"><img src="images/nutty-gallery-1.png" width="300px" height="180px"
+                            alt="Logo nutty Style y variables" onClick="mostrarGaleria()"></a>
+                    <a href="#foto-2-nutty"><img src="images/nutty-gallery-2.png" width="300px" height="180px"
+                            alt="tipografías nutty Style" onClick="mostrarGaleria()"></a>
+                    <a href="#foto-3-nutty"><img src="images/nutty-gallery-3.png" wwidth="300px" height="180px" alt="Mockups nutty Style"
+                            onClick="mostrarGaleria()"></a>
+                </section>
+            </section>
+            <section id="galeria">
+                <ul id="galeria-oculta">
+                    <li class="fraccion-galeria" id="foto-1-nutty">
+                        <a href="#" class="primer-ultima-flecha"><img src="svg/angulo-izquierdo.svg" width="50px"
+                                height="50px" alt="Anterior"></a>
+                        <img class="close" src="svg/cruz.svg" alt="Cerrar" width="50px" height="50px"
+                            onClick="ocultarGaleria()">
+                        <a href="#foto-2-nutty"><img src="svg/angulo-derecho.svg" width="50px" height="50px"
+                                alt="Siguiente"></a>
+                    </li>
+                    <li class="fraccion-galeria" id="foto-2-nutty">
+                        <a href="#foto-1-nutty"><img src="svg/angulo-izquierdo.svg" width="50px" height="50px"
+                                alt="Anterior"></a>
+                        <img class="close" src="svg/cruz.svg" alt="Cerrar" width="50px" height="50px"
+                            onClick="ocultarGaleria()">
+                        <a href="#foto-3-nutty"><img src="svg/angulo-derecho.svg" width="50px" height="50px"
+                                alt="Siguiente"></a>
+                    </li>
 
-                <li class="fraccion-galeria" id="foto-3-nutty">
-                    <a href="#foto-2-nutty"><img src="svg/angulo-izquierdo.svg" width="50px" height="50px" alt="Anterior"></a>
-                    <img class="close" src="svg/cruz.svg" alt="Cerrar" width="50px" height="50px"
-                        onClick="ocultarGaleria()">
-                    <a href="#foto-4-nutty"><img src="svg/angulo-derecho.svg" width="50px" height="50px" alt="Siguiente"></a>
-                </li>
-
-                <li class="fraccion-galeria" id="foto-4-nutty">
-                    <a href="#foto-3-nutty"><img src="svg/angulo-izquierdo.svg" width="50px" height="50px" alt="Anterior"></a>
-                    <img class="close" src="svg/cruz.svg" alt="Cerrar" width="50px" height="50px"
-                        onClick="ocultarGaleria()">
-                    <a href="#" class="primer-ultima-flecha"><img src="svg/angulo-derecho.svg" width="50px"
-                            height="50px" alt="Siguiente"></a>
-                </li>
-            </ul>
+                    <li class="fraccion-galeria" id="foto-3-nutty">
+                        <a href="#foto-2-nutty"><img src="svg/angulo-izquierdo.svg" width="50px" height="50px"
+                                alt="Anterior"></a>
+                        <img class="close" src="svg/cruz.svg" alt="Cerrar" width="50px" height="50px"
+                            onClick="ocultarGaleria()">
+                        <a href="#" class="primer-ultima-flecha"><img src="svg/angulo-derecho.svg" width="50px"
+                                height="50px" alt="Siguiente"></a>
+                    </li>
+                </ul>
+            </section>
+            <a class="boton-volver" href="proyectos.html">
+                <p>Volver a Proyectos</p>
+            </a>
         </section>
     </main>
 
