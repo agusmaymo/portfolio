@@ -273,10 +273,12 @@ transition: opacity 0.4s ease;
     gap: 24px;
     border-radius: 25px;
     margin: 24px auto;
+    width: 115vh;
 }
 
 .quien-soy p {
-    width: 460px;
+    width: 95%;
+    padding: 10px 0px;
 }
 
 #foto-perfil{
@@ -592,10 +594,10 @@ button:hover {
 
 
 
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 400px) and (max-width: 1200px) {
 
 header, main {
-    margin: 30px auto;
+    margin: 50px auto;
     width: 100vh;
 }
 
@@ -618,13 +620,32 @@ h1 {
     font-size: 4rem;
 }
 
+h2 {
+    font-size: 3.5rem;
+}
+
+h3 {
+    font-size: 3rem;
+    width: 65vh;
+    padding: 10px 0;
+}
+
 footer {
    padding: 64px;
     width: 100vh;
 }
 
+main p {
+    font-size: 2.5rem;
+    max-width: 90%;
+}
+
+main section {
+    max-width: 100vh;
+}
+
 #texto-footer {
-     width: 75%;
+    width: 75%;
     gap: 5px;
     flex-direction: column;
     align-items: flex-start;
@@ -653,12 +674,22 @@ footer p {
 
 }
 
+/*---INDEX---*/
+
+#menu-aventura {
+    flex-direction: column;
+}
+
+#menu-aventura article{
+    width: 70vh;
+}
+
+#menu-aventura h2 {
+    font-size: 5rem;
+}
+
 /*---PAGINA-CONTACTO---*/
 
-.form-intro {
-    font-size: 2rem;
-    max-width: 90%;
-}
 
 #formulario-contacto p {
     font-size: 2rem;
@@ -715,4 +746,95 @@ label {
     from { opacity: 0; transform: translateY(8px); }
     to { opacity: 1; transform: translateY(0); }
 }
+
+/*---PAGINA-PROYECTOS-INDIVIDUALES---*/
+
+#miniaturas {
+    width: 100vh;
+    flex-direction: column;
+    align-items: center;
 }
+
+#miniaturas a {
+    width: 600px
+}
+
+#miniaturas a img {
+    width: 600px;
+    height: auto;
+
+}
+
+#galeria {
+	width: 100vh;
+}
+
+#galeria-oculta {
+	justify-content: center;
+    align-items: center;
+}
+
+.fraccion-galeria {
+	background-position: center;
+	background-size: contain;
+	min-width: 100vh;
+	justify-content: space-between;
+}
+
+#miniaturas-proyectos article {
+    flex-direction: column;
+}
+
+#miniaturas-proyectos article img {
+    width: 40vh;
+    height: auto;
+    padding: 10px;
+    }
+
+/*---PAGINA-SOBRE-MI---*/
+
+#hero {
+    flex-direction: column;
+    width: 100%;
+    padding:50px
+}
+
+#foto-perfil {
+    width: 90%;
+    height: auto;
+}
+
+.quien-soy {
+    width: 75vh;
+}
+#habilidades{
+    display: flex;
+    flex-direction: column;
+}
+
+#habilidades article {
+    flex-direction: column;
+}
+
+#herramientas {
+    width: 88%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+#herramientas img {
+    width: 25vh;
+    height: auto;
+
+}
+
+
+
+
+
+
+
+}
+
