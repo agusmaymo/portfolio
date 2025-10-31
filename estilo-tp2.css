@@ -56,8 +56,6 @@ body {
 }
 
 header {
-    /*margin: 15px;
-    padding: 0px 80px;*/
     margin: 16px 48px;
     padding: 0px 24px;
 
@@ -82,7 +80,6 @@ footer {
     padding: 12px 32px;
     justify-content: space-between;
     align-items: center;
-    /*position: fixed;*/
     bottom: 0;
     left: 0;
     z-index: 100;
@@ -588,19 +585,62 @@ button:hover {
 
 
 
-@media screen and (min-width: 500px) and (max-width: 1200px) {
+@media screen and (min-width: 400px) and (max-width: 1200px) {
 
-main {
-   justify-content: flex-start ;
+header, main {
+    margin: 30px auto;
+    width: 100vh;
+}
+
+#logo-agus-maymo {
+    width: 790px;
+    height: 200px;
+}
+
+#barra-navegacion {
+   flex-direction: column;
+
+}
+
+.botones-nav a {
+    padding: 12px 45px;
+    font-size: 2rem;
 }
 
 h1 {
-    font-size: 5rem;
+    font-size: 4rem;
 }
 
-/*---------------------------------
------------PAGINA-CONTACTO-----------
----------------------------------*/
+footer {
+    /* flex-direction: column; */
+    padding: 40px 72px;
+    width: 100vh;
+}
+
+#texto-footer {
+    display: flex;
+    flex-direction: column;
+}
+
+#barra-footer {
+    font-size: 1.7rem;
+}
+
+footer p {
+    font-size: 1.2rem;
+    padding: 15px;
+}
+
+#social-media {
+    gap: 20px;
+}
+
+#social-media img {
+    height: 60px;
+
+}
+
+/*---PAGINA-CONTACTO---*/
 
 .form-intro {
     font-size: 2rem;
@@ -628,11 +668,11 @@ textarea {
 }
 
 label {
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 #tipo {
-    font-size: 1.7rem;
+    font-size: 1.5rem;
 }
 
 .check-botones-form {
